@@ -1,0 +1,7 @@
+services:
+  curl-proxy:
+    build: .
+    container_name: curl-proxy
+    ports:
+      - "5555:5555"
+    restart: unless-stopped
